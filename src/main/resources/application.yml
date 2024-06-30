@@ -1,0 +1,78 @@
+spring:
+  profiles:
+    active: test
+---
+spring:
+  application:
+    name: jiangliangdev
+  config:
+    activate:
+      on-profile: dev
+server:
+  port: 7081
+jl:
+  sex: man
+  cm: 183
+  kg: 80
+  year:
+     - 1
+     - 2
+     - 3
+jl333:
+  sex: man
+  cm: 189
+  kg: 85
+  year:
+    - 1
+    - 2
+    - 3
+---
+spring:
+  config:
+    activate:
+      on-profile: test
+  application:
+    name: jiangliangtest
+server:
+  port: 7082
+jl:
+  sex: mantest
+  cm: 183test
+  kg: 80test
+  year:
+    - 1test
+    - 2test
+    - 3test
+jl333:
+  sex: mantest
+  cm: 189test
+  kg: 85test
+  year:
+    - 1test
+    - 2test
+    - 3test
+---
+spring:
+  config:
+    activate:
+      on-profile: main
+  application:
+    name: jiangliangmain
+server:
+  port: 7083
+jl:
+  sex: manmain
+  cm: 183main
+  kg: 80main
+  year:
+    - 1main
+    - 2main
+    - 3main
+jl333:
+  sex: manmain
+  cm: 189main
+  kg: 85main
+  year:
+    - 1main
+    - 2main
+    - 3main

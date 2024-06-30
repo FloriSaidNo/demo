@@ -1,0 +1,6 @@
+server:
+  port: 7082
+
+spring:
+  application:
+    name: jiangliangyaml
